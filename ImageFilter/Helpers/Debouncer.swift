@@ -23,6 +23,8 @@ class Debouncer {
         })
     }
     
+    deinit { timer.invalidate() }
+    
     func debounce() {
         isAllowed = false
     }
